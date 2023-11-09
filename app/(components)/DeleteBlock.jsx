@@ -8,7 +8,8 @@ const DeleteBlock = ({ id }) => {
   const router = useRouter();
 
   const deleteTicket = async () => {
-    const res = await fetch(`http://localhost:3000/api/Tickets/${id}`, {
+    //http://localhost:3000/
+    const res = await fetch(`https://ticketing-app-henna.vercel.app/api/Tickets/${id}`, {
       method: "DELETE",
     });
     if (res.ok) {
