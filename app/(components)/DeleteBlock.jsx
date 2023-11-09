@@ -9,7 +9,7 @@ const DeleteBlock = ({ id }) => {
 
   const deleteTicket = async () => {
     //http://localhost:3000/
-    const res = await fetch(`http://localhost:3000/api/Tickets/${id}`, {
+    const res = await fetch(`https://main--zippy-shortbread-c3ad25.netlify.app/api/Tickets/${id}`, {
       method: "DELETE",
     });
     if (res.ok) {
